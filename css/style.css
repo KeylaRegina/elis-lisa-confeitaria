@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+
+:root{
+    --rosa-principal: #ff4d6d;
+    --rosa-claro: #ffc2d1;
+    --marrom: #5a2d2d;
+    --marrom-claro: #7a4a4a;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to bottom, #f8d7df, #fbe4ea);
+    color: #5a2d2d;
+}
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
