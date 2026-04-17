@@ -4,7 +4,8 @@
     width: 100%;
 
     background: url('/img/principal/ChatGPT\ Image\ 1\ de\ mar.\ de\ 2026\,\ 11_07_38.png') no-repeat top center;
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: top center;
 
     display: flex;
     align-items: center;
