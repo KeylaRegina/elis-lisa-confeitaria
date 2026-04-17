@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const botoes = document.querySelectorAll(".btn-ver");
+    const imagens = document.querySelectorAll(".bolo-card img");
     const modal = document.getElementById("modal");
 
     const modalImg = document.getElementById("modalImg");
@@ -10,16 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const fechar = document.querySelector(".fechar");
 
     // abrir modal
-    botoes.forEach(botao => {
-        botao.addEventListener("click", () => {
+    imagens.forEach(img => {
+        img.addEventListener("click", ()  => {
             modal.style.display = "flex";
 
-            modalImg.src = botao.dataset.img;
-            modalNome.textContent = botao.dataset.nome;
-            modalDesc.textContent = botao.dataset.desc;
+            modalImg.src = img.src;
+            modalNome.textContent = img.alt;      
+            modalDesc.textContent = "";  
         });
     });
-
 
 
     // fechar no X

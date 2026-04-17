@@ -13,7 +13,7 @@ btn.addEventListener('click', () =>{
     }
 
     const texto = `Olá! Meu nome é ${nome}📞Telefone: ${telefone}. Gostaria de fazer um pedido: ${mensagem}`;
-    const numero = '5561984251628'; // <- coloque o numero da confeiteira aqui
+    const numero = '5561996092941'; // <- coloque o numero da confeiteira aqui
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
     
     window.open(url, '_blank');
