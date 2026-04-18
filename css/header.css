@@ -14,55 +14,42 @@
 
 
 }
+
 .hamburguer{
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
     display:none;
     background:none;
     border: none;
+  
 }
 
 
 /*MOBILE*/
 
 @media (max-width: 768px){
-.menu{
-    display: none;
-    flex-direction: column;
-    background: #f8cce0;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 8px;
-}
-.menu, show{
-    display:flex;
-}
+    .hamburguer{
+        display:block;
+    }
+    .menu{
+        display: none;
+        position:absolute;
+        top: 70px;
+        right: 10px;
+        background: #f8b6c1;
+        padding: 15px;
+        border-radius: 10px;
+    }
 
-.hamburguer{
-    display: block;
-    font-size: 24px;
-    background: none;
-    cursor: pointer;
-}
-}
-
-
-
-header h1 {
-    color: white;
-    margin-bottom: 5px;
-    font-size: 50px;
+    .menu.active{
+        display: block;
+    }
 
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20x;
 
-}
+
+
 
 .menu a {
     text-decoration: none;

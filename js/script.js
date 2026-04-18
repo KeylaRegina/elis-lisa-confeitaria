@@ -36,5 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleMenu(){
-    document.getElementById('menu').classList.toggle("show");
+const menu= document.getElementById("menu");
+menu.classList.toggle("active");
 }
