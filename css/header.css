@@ -165,24 +165,6 @@ a.btn {
 
 }
 
-.carrinho-topo {
-    background: white;
-    color: #ff4d6d;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#contadorCarrinho {
-    background: #ff4d6d;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 7px;
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: auto;
-}
 
 @media (max-width:768px) {
     .header {
