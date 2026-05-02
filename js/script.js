@@ -62,7 +62,7 @@ if (botaoFinalizar){
         });
         mensagem += `\n *Total: R$ ${total.toFixed(2)}*`;
 
-        const telefone = "5561984251628";
+        const telefone = "5561996092941";
         const link = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
         window.open(link, "_blank");
