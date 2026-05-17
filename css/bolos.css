@@ -67,6 +67,16 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+
+
+
+.imagem-grande{
+    transform: scale(2);
+    z-index:999;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
 .bolo-card button{
     border:none;
     background:#ff4d6d;
@@ -103,12 +113,7 @@
     }
 }
 
-.imagem-grande{
-    transform: scale(2);
-    z-index:999;
-    position:relative;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
+
 
 
 

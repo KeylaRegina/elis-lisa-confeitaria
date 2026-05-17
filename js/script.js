@@ -89,6 +89,12 @@ if (botaoFinalizar){
     const imagens =document.querySelectorAll(".img-zoom");
     imagens.forEach(img => {
         img.addEventListener("click", () =>{
-            img.classList.toggle("imagem-grande");
-        });
+        imagens.forEach((outraImg) =>{
+            if(outraImg !==img){
+                outraImg.classList.remove("imagem-grande");
+            }
+    });
+    //aumenta apenas clicando
+    img.classList.toggle("imagem-grande");
+});
     });
