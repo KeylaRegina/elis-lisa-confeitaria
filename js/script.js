@@ -75,3 +75,20 @@ if (botaoFinalizar){
 
     carrinho = [];
     atualizarBotao(); //👈 ESSA LINHA É O QUE ATUALIZA 
+
+
+    const linksMenu=document.querySelectorAll("#menu a");
+    linksMenu.forEach(link =>{
+        link.addEventListener("click", () =>{
+            menu.classList.remove("active");
+        });
+    });
+
+
+
+    const imagens =document.querySelectorAll(".img-zoom");
+    imagens.forEach(img => {
+        img.addEventListener("click", () =>{
+            img.classList.toggle("imagem-grande");
+        });
+    });
