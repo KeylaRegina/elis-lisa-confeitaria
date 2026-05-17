@@ -55,14 +55,13 @@ O projeto foi desenvolvido para funcionar em diferentes dispositivos, garantindo
 
 ## 📸 Preview do projeto
 
-<img width="1269" height="612" alt="image" src="https://github.com/user-attachments/assets/957895a8-2d7f-49a3-afe2-5952c6a597db" />
+<img width="366" height="787" alt="Captura de tela 2026-05-17 011701" src="https://github.com/user-attachments/assets/2030010c-0f83-4c07-afed-08f493946285" />
 
-<img width="1391" height="610" alt="image" src="https://github.com/user-attachments/assets/644bbff3-7915-4173-9af4-87e3616d5688" />
+<img width="370" height="790" alt="Captura de tela 2026-05-17 011644" src="https://github.com/user-attachments/assets/1df568c6-4785-4fb4-a41d-c8e93651a977" />
+<img width="367" height="787" alt="Captura de tela 2026-05-17 011623" src="https://github.com/user-attachments/assets/656af049-107b-4a9a-b858-8a4c7eb1a855" />
 
-<img width="1256" height="606" alt="image" src="https://github.com/user-attachments/assets/acfc9841-ab31-45c2-83c9-dd7b01f467d4" />
 
 
-<img width="459" height="606" alt="image" src="https://github.com/user-attachments/assets/5dbf2827-a02b-42fe-afcb-cd0a3923808b" />
 
 
 ---
