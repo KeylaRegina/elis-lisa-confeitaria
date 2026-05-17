@@ -107,7 +107,7 @@
 }
 
 .caricatura{
-    width:100%;
+    width:180%;
     display: flex;
     justify-content: center;
 
@@ -115,7 +115,7 @@
 }
 
 .caricatura img {
-    width: 100px;
+    width: 180px;
     max-width: 250px;
     height:auto;
     opacity: 0;

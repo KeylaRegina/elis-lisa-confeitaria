@@ -1,6 +1,6 @@
 .header {
-   
-  position: fixed;
+
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -21,91 +21,24 @@
 
 }
 
-.menu{
-    display:flex;
-    flex-direction: column;
-    position: absolute;
+/*desktop*/
+.menu {
+    display: flex;
+    align-items: center;
     gap: 25px;
-    opacity: 0;
-    transform:translateY(-10px);
-    pointer-events: none;
-    transition: 0.3s;
     list-style: none;
-    margin: 0;
-    padding: 0;
 
 }
-
-.menu.active{
-    opacity:1;
-    transform:translateY(0);
-    pointer-events: auto;
-}
-
-.hamburguer{
-    position:absolute;
-    right: 0%;
-    transform:translateY(-50%);
-    color:white;
-    cursor: pointer;
-    background:none;
-    border: none;
-    margin-left: 15px;
-    font-size: 32px;
-    top: 50%
-}
-
-button:hover, a:hover{
-    opacity: 0.9;
-    transition: 0.3s;
-}
-
-button, a, .menu li, .btn-adicionar, .hamburguer{
-    cursor:pointer;
-}
-
-
-
-/*MOBILE*/
-
-@media (max-width: 768px){
-    .hamburguer{
-        display:block;
-    }
-    .menu{
-        display: none;
-        position:absolute;
-        top: 60px;
-        right: 10px;
-        background: #f8b6c1;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .menu.active{
-        display: block;
-    }
-
-    .home{
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 120px 20px 40px;
-        gap:20px;
-    }
-
-}
-
-
-
-
 
 .menu a {
     text-decoration: none;
     font-weight: 600;
     color: white;
-    transition: 0.3s;
-    font-size: 1.8rem;
+    font-size: 1rem;
+}
+
+.hamburguer {
+    display: none;
 }
 
 .menu a::after {
@@ -126,17 +59,86 @@ button, a, .menu li, .btn-adicionar, .hamburguer{
 .menu a:hover {
     color: #ffe0e9;
 }
-.logo span{
-    color:#ffe0e9;
+
+.logo span {
+    color: #ffe0e9;
 }
 
 .logo {
-     font-size: 32px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
 
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+button:hover,
+a:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+button,
+a,
+.menu li,
+.btn-adicionar,
+.hamburguer {
+    cursor: pointer;
+}
+
+
+
+/*MOBILE*/
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: white;
+        font-size: 32px;
+
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        ;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: #f8b6c1;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 20px 40px;
+        gap: 20px;
+    }
+
+}
+
+
+
+
+
+
 
 @keyframes brilho {
     from {
@@ -154,33 +156,15 @@ button, a, .menu li, .btn-adicionar, .hamburguer{
 
 
 .nav {
-    position: absolute;
-    right: 10px;
-    top: 60px;
-    justify-content: space-between;
+    margin-left: auto;
     text-align: center;
     padding: 10px;
     margin-right: 20px;
     font-size: 26px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-}
 
-nav a {
-    text-decoration: none;
-    color: #5a2d2d;
-    font-weight: bold;
-}
 
-nav a:hover {
-    color: #c97c7c;
-}
 
 a.btn {
     background: var(--rosa-principal);
@@ -202,16 +186,7 @@ a.btn {
 
 }
 
-@media(max-width: 768px) {
-    .home h2 {
-        font-size: 28px;
-    }
 
-    .home p {
-        font-size: 16px;
-    }
-
-}
 
 
 @media (max-width:768px) {
@@ -225,5 +200,13 @@ a.btn {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+    }
+
+    .home h2 {
+        font-size: 28px;
+    }
+
+    .home p {
+        font-size: 16px;
     }
 }
