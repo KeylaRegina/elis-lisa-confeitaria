@@ -66,15 +66,21 @@
     transform: scale(1.08);
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+body.zoom-ativo{
+    overflow: hidden;
+}
 
 
 
 
 .imagem-grande{
-    transform: scale(2);
-    z-index:999;
-    position:relative;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-radius: 16px;
 }
 
 .bolo-card button{

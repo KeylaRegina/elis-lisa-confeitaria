@@ -77,12 +77,15 @@ if (botaoFinalizar){
     atualizarBotao(); //👈 ESSA LINHA É O QUE ATUALIZA 
 
 
-    const linksMenu=document.querySelectorAll("#menu a");
-    linksMenu.forEach(link =>{
-        link.addEventListener("click", () =>{
-            menu.classList.remove("active");
-        });
+  const menu = document.getElementById("menu");
+  const linksMenu = document.querySelectorAll("#menu a");
+
+  linksMenu.forEach(link =>{
+    link.addEventListener("click", () =>{
+        menu.classList.remove("active");
     });
+  
+  });
 
 
 
@@ -96,5 +99,9 @@ if (botaoFinalizar){
     });
     //aumenta apenas clicando
     img.classList.toggle("imagem-grande");
+    document.body.classList.toggle(
+        "zoom-ativo",
+        img.classList.contains("imagem-grande")
+    );
 });
     });
