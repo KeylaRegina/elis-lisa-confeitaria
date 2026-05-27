@@ -92,16 +92,26 @@ if (botaoFinalizar){
     const imagens =document.querySelectorAll(".img-zoom");
     imagens.forEach(img => {
         img.addEventListener("click", () =>{
-        imagens.forEach((outraImg) =>{
-            if(outraImg !==img){
-                outraImg.classList.remove("imagem-grande");
-            }
+        const ativo = img.classList.contains("imagem-grande");
+
+        //fecha todas as outras
+        imagens.forEach(outraImg => {
+            outraImg.classList.remove("imagem-grande");
+            outraImg.classList.add("img-zoom");
+        });
+
+        if (!ativo){
+            img.classList.remove("img-zoom");
+            img.classList.add("imagem-grande");
+            document.body.classList.add("zoom-ativo");
+
+        }else{
+            img.classList.remove("imagem-grande");
+            img.classList.add("img-zoom");
+            document.body.classList.remove("zoom-ativo");
+        }
+
     });
-    //aumenta apenas clicando
-    img.classList.toggle("imagem-grande");
-    document.body.classList.toggle(
-        "zoom-ativo",
-        img.classList.contains("imagem-grande")
-    );
-});
+ 
     });
+ 

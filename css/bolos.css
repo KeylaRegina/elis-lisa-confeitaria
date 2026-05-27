@@ -53,34 +53,32 @@
 }
 
 .img-zoom{
-    width:90px;
-    height:90px;
-    object-fit:cover;
-    border-radius: 12px;
-
-    cursor:pointer;
-    transition: 0.3s;
+   width: 90px;
+   height: 90px;
+   object-fit:cover;
+   border-radius: 12px;
+   cursor:pointer;
+   transition: 0.3s;
 }
 
 .img-zoom:hover{
     transform: scale(1.08);
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-body.zoom-ativo{
-    overflow: hidden;
-}
 
 
-
-
+/* Quando a imagem é clicada e ganha a classe imagem-grande */
 .imagem-grande{
-    position: fixed;
+    position:fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%);
+    width:90vw;
+    max-width: 500px;
+    height: auto;
     z-index: 9999;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
 }
 
 .bolo-card button{
